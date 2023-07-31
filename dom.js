@@ -12,16 +12,34 @@
 // {
 //     item[p].style.fontWeight='bold';
 // }
-var item=document.getElementsByClassName('list-group-item')
-item[0].style.backgroundColor='yellow'
-item[3].style.fontWeight='bold'
+// var item=document.getElementsByClassName('list-group-item')
+// item[0].style.backgroundColor='yellow'
+// item[3].style.fontWeight='bold'
 
-///// GetElementByTagNAme
+// ///// GetElementByTagNAme
 
-var li=document.getElementsByTagName('li')
-li[0].style.backgroundColor='blue';
-li[0].style.fontWeight='bold';
-for( var h=0;h<li.length;h++)
+// var li=document.getElementsByTagName('li')
+// li[0].style.backgroundColor='blue';
+// li[0].style.fontWeight='bold';
+// for( var h=0;h<li.length;h++)
+// {
+//     li[h].style.backgroundColor='red'
+// }
+
+// ============================querySelector====================================================================
+// var q=document.querySelector('li:nth-child(2)')
+// //q.style.backgroundColor='green'
+// var k=document.querySelector('li:nth-child(3)')
+// k.style.display='none';
+
+
+//==========querySelectorAll============================================================================
+
+var ok=document.querySelectorAll(' li')[1];
+//ok.style.backgroundColor='green';
+var odd=document.querySelectorAll('li:nth-child(odd)');
+for(var i=0;i<odd.length;i++)
 {
-    li[h].style.backgroundColor='red'
+odd[i].style.backgroundColor='green'
 }
+
