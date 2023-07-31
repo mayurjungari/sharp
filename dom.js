@@ -6,11 +6,22 @@
 // p.style.color='green';
 // p.style.fontWeight='bold';
 //k.style.backgroundColor='red'
-var item=document.getElementsByClassName('list-group-item');
-item[2].style.backgroundColor='green';
-for(var p=0;p<item.length;p++)
+// var item=document.getElementsByClassName('list-group-item');
+// item[2].style.backgroundColor='green';
+// for(var p=0;p<item.length;p++)
+// {
+//     item[p].style.fontWeight='bold';
+// }
+var item=document.getElementsByClassName('list-group-item')
+item[0].style.backgroundColor='yellow'
+item[3].style.fontWeight='bold'
+
+///// GetElementByTagNAme
+
+var li=document.getElementsByTagName('li')
+li[0].style.backgroundColor='blue';
+li[0].style.fontWeight='bold';
+for( var h=0;h<li.length;h++)
 {
-    item[p].style.fontWeight='bold';
+    li[h].style.backgroundColor='red'
 }
-
-
